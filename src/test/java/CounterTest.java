@@ -25,7 +25,16 @@ public class CounterTest {
 		
 		for(int i = 1; i <10; i++) {
 			testCounter.increment();
-			assertEquals(testCounter.getCount(), i--);
+			assertEquals(testCounter.getCount(), i);
+		}
+	}
+	@Test
+	public void testIncrement2() {
+		Counter testCounter = new Counter();
+		
+		for(int i = 1; i <10; i++) {
+			testCounter.increment();
+			assertEquals(testCounter.getCount(), i*1);
 		}
 	}
 
