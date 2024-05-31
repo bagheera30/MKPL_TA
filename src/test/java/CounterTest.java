@@ -29,7 +29,7 @@ public class CounterTest {
 		}
 	}
 	@Test
-	public void testIncrement() {
+	public void testIncrement2() {
 		Counter testCounter = new Counter();
 		
 		for(int i = 1; i <10; i++) {
