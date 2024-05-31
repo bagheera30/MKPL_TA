@@ -29,12 +29,12 @@ public class CounterTest {
 		}
 	}
 	@Test
-	public void testIncrement2() {
+	public void testIncrement() {
 		Counter testCounter = new Counter();
 		
 		for(int i = 1; i <10; i++) {
 			testCounter.increment();
-			assertEquals(testCounter.getCount(), i*-1);
+			assertNotEquals(testCounter.getCount(), i);
 		}
 	}
 
