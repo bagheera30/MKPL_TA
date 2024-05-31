@@ -23,8 +23,8 @@ public class CounterTest {
 	public void testIncrement() {
 		Counter testCounter = new Counter();
 		testCounter.increment();
-		Counter=2;
-		assertEquals(Counter, testCounter.getCount());
+		counter=2;
+		assertEquals(testCounter.getCount(), count);
 	
 	}
 
