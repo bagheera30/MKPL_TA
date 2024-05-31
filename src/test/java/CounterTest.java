@@ -22,10 +22,11 @@ public class CounterTest {
 	@Test
 	public void testIncrement() {
 		Counter testCounter = new Counter();
-		testCounter.increment();
-		counter=2;
-		assertEquals(testCounter.getCount(), count);
-	
+		
+		for(int i = 1; i <10; i++) {
+			testCounter.increment();
+			assertEquals(testCounter.getCount(), i-1);
+		}
 	}
 
 	@Test
