@@ -28,15 +28,7 @@ public class CounterTest {
 			assertEquals(testCounter.getCount(), i);
 		}
 	}
-	@Test
-	public void testIncrement2() {
-		Counter testCounter = new Counter();
-		
-		for(int i = 1; i <10; i++) {
-			testCounter.increment();
-			assertNotEquals(testCounter.getCount(), i);
-		}
-	}
+
 
 	@Test
 	public void testDecrement() {
